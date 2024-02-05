@@ -110,7 +110,7 @@ function Register() {
                     <p>Already have an account ?<a href='/login'>Login</a> </p>
                 </form>
                 <div className='image'>
-                    <img src='https://img.freepik.com/free-photo/glad-positive-afro-american-lady-chooses-outft-date-holds-high-heeled-blue-shoes-rosy-dress-hangers-prepares-party-celebration-poses-blue-wall-with-inflated-balloons_273609-39701.jpg?size=626&ext=jpg' />
+                    <img src='https://img.freepik.com/free-vector/people-shopping-with-bags_24908-56764.jpg?size=626&ext=jpg' />
                 </div>
             </div>
 

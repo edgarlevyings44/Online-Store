@@ -17,6 +17,7 @@ import SnacksMunchiesPage from './Components/Homepage/SnacksMunchies';
 import AllCategoriesPage from './Components/Homepage/AllCategories';
 import Mpesa from './Components/Homepage/Mpesa';
 import MyOrders from './Components/Homepage/MyOrders';
+import ResetPassword from './Components/Homepage/ResetPassword';
 
 function AppRoutes({showNotification, customer, setCustomer, handleAddToCart, totalAmount, removeFromCart, cart, setCart}) {
 
@@ -26,6 +27,7 @@ function AppRoutes({showNotification, customer, setCustomer, handleAddToCart, to
 
           <Route path='/register' element={<Register />}/>
           <Route path='/login' element={<Login setCustomer={setCustomer}/>}/>
+          <Route path='/resetpassword' element={<ResetPassword />}/>
           <Route path='/' element={<HomePage handleAddToCart={handleAddToCart} />}/>
           <Route path='/top-categories' element={<TopCategoriesPage />}/>
           <Route path='/fruits-and-vegetables' element={<FruitsVegPage handleAddToCart={handleAddToCart}/>}/>
@@ -39,7 +41,7 @@ function AppRoutes({showNotification, customer, setCustomer, handleAddToCart, to
           <Route path='/cart' element={<Cart customer={customer} cart={cart} setCart={setCart} removeFromCart={removeFromCart} totalAmount={totalAmount}/>}/>
           <Route path='/cart/payment' element={<Mpesa totalAmount={totalAmount}/>}/>
           <Route path='/myorders' element={<MyOrders />}/>
-     
+          
 
         </Routes>
     </div>

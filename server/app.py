@@ -121,6 +121,41 @@ class Login(Resource):
 api.add_resource(Login, '/login')
 
 
+class ForgotPassword(Resource):
+
+    @staticmethod
+    def put():
+        data = request.get_json()
+
+        user_email = data['email']
+        new_password = data['password']
+
+        existing_user = Customer.query.filter_by(email = user_email).first()
+
+        if existing_user is None:
+            
+            return make_response(
+                jsonify({
+                    "messae":"Email not found"
+                }), 401
+            )
+        
+        hash_password = bcrypt.generate_password_hash(new_password)
+
+        existing_user.password = hash_password
+
+        db.session.commit()
+
+        return make_response(
+            jsonify({
+                "message":"Password successfully changed"
+            }), 201
+        )
+        
+        
+
+api.add_resource(ForgotPassword, '/resetpassword')
+
 class Logout(Resource):
 
     @staticmethod
