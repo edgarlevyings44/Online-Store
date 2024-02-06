@@ -65,13 +65,20 @@ function Login({setCustomer}) {
                     onChange={handleChange}
                 />
 
-                <div className='forgot'>
-                    <Link to='/register'>Do you have an account ?</Link>
+                <div className='forgotpassword'>
+                    <Link to='/resetpassword'>Forgot password ?</Link>
                 </div>
-            
-                <button className='button' type='submit'>
+
+                <button className='login_button' type='submit'>
                     Sign in
                 </button>
+
+                <div className='to_register'>
+                    <p>Don't have an account ?</p>
+                    <Link to='/register'>Register Now</Link>
+                </div>
+            
+
 
                 
             </form>

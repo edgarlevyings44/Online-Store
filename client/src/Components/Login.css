@@ -48,12 +48,31 @@
     text-indent: 10px;
 }
 
-.forgot{
-    margin-bottom: 20px;
-    margin-right: -55%;
+.forgotpassword{
+    text-align: right;
+    margin-bottom: 15px;
 }
 
-.forgot a{
+.forgotpassword a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+.login_button{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.to_register{
+    margin: auto;
+
+}
+
+.to_register p{
+    color: #ee7214;
+}
+
+.to_register a{
     color: #ee7214;
     text-decoration: none;
 }

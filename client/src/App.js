@@ -77,7 +77,7 @@ function App() {
       <div className='main-content'>
         <AppRoutes customer={customer} setCustomer={setCustomer} showNotification={showNotification} handleAddToCart={handleAddToCart} totalAmount={totalAmount} removeFromCart={removeFromCart} cart={cart} setCart={setCart}/>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
